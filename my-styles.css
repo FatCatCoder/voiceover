@@ -1,0 +1,7 @@
+.audio-card{
+    background-color: black;
+}
+
+.card.h-100.w-100:hover{
+    transform: scale(1.2);
+}
