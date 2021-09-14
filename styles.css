@@ -494,7 +494,7 @@ button:not(:disabled),
 
 /*# sourceMappingURL=bootstrap.css.map */
 
-.card.h-100.w-100:hover{
+.card.enlarge:hover{
   transform: scale(1.2);
   z-index: 2;
 }
