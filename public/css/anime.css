@@ -1,23 +1,23 @@
 @-webkit-keyframes color-change-2x {
     0% {
-        color: white;
+        color: black;
       }
     50% {
-      color: #19dcea;
+      color: #207bf1;
     }
     100% {
-      color: #b22cff;
+      color: #ff2c84;
     }
   }
   @keyframes color-change-2x {
     0% {
-        color: white;
+        color: black;
       }
     50% {
-      color: #19dcea;
+      color: #207bf1;
     }
     100% {
-      color: #b22cff;
+      color: #ff2c84;
     }
   }
   
@@ -28,23 +28,15 @@
 
 
 .service-icon:hover{
-    -webkit-animation: shine .5s ease-in-out 1;
-            animation: shine .5s ease-in-out 1;
+    -webkit-animation: fade .5s ease-in-out 1;
+            animation: fade .5s ease-in-out 1;
 }
 
-@keyframes shine{
-    10% {
+@keyframes fade{
+    0% {
       opacity: 1;
-      top: -30%;
-      left: -30%;
-      transition-property: left, top, opacity;
-      transition-duration: 0.7s, 0.7s, 0.15s;
-      transition-timing-function: ease;
     }
     100% {
       opacity: 0;
-      top: -30%;
-      left: -30%;
-      transition-property: left, top, opacity;
     }
   }

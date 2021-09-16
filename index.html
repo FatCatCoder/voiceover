@@ -34,15 +34,16 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-blend-mode: overlay;
-  color: white;
-  background-image: url("./public/images/landing-image.jpg");
+  background-blend-mode: normal;
+  color: black; 
+  text-shadow: 2px 2px #ff0000;
+  background-image:   url("./public/images/diag-btm.svg"), url("./public/images/d11.svg"), url("./public/images/d12.svg"), url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80");
   min-height: 100%;
 }
 
 /* Second image (Demo) */
 .bgimg-2 {
-  background-image: url("./public/images/bg-image-portfolio.jpg");
+  background-image: url("https://images.unsplash.com/photo-1611532736579-6b16e2b50449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80");
   min-height: 400px;
 }
 
@@ -77,6 +78,11 @@ body, html {
   .carolyn-rood{
     font-size: 12vw !important;
   }
+  .red-bar{
+    background-color: #9a213a !important; 
+    width: 100vw !important; 
+    transform: rotate(-10deg) !important;
+  }
 }
 </style>
 <body>
@@ -108,6 +114,7 @@ body, html {
   <div class="w3-display-middle" style="white-space:nowrap; padding-bottom: 150px !important;">
     <h1 class="display-1 color-change-2x carolyn-rood" style="font-family: Courgette; font-size: 8vw;">Carolyn Rood</h1>
   </div>
+  <img src="./public/images/introduction-3616867.svg" style="transform: scale(.5);"/>
 </div>
 
 <!-- Container (About Section) -->
