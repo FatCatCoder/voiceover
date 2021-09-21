@@ -1,6 +1,11 @@
+.color-change-2x:hover {
+  -webkit-animation: color-change-2x 4s linear infinite alternate both;
+          animation: color-change-2x 4s linear infinite alternate both;
+  }
+
 @-webkit-keyframes color-change-2x {
     0% {
-        color: black;
+        color: rgba(245, 245, 245, 0.856);
       }
     50% {
       color: #207bf1;
@@ -11,7 +16,7 @@
   }
   @keyframes color-change-2x {
     0% {
-        color: black;
+        color: rgba(245, 245, 245, 0.856);
       }
     50% {
       color: #207bf1;
@@ -20,23 +25,33 @@
       color: #ff2c84;
     }
   }
-  
-.color-change-2x:hover {
--webkit-animation: color-change-2x 4s linear infinite alternate both;
-        animation: color-change-2x 4s linear infinite alternate both;
-}
 
 
-.service-icon:hover{
-    -webkit-animation: fade .5s ease-in-out 1;
-            animation: fade .5s ease-in-out 1;
+  .service-icon{
+    height: 150px;
+    width: 150px;
+    background-color: rgba(1, 1, 15, 0.26);
+    border: 2px solid rgb(202, 211, 252);
+    border-radius: 100%;
+    animation-fill-mode: backwards;
+    animation-play-state: paused;
+  }
+
+.service-icon:hover, .service-icon:active, .service-icon:focus {
+    -webkit-animation: fade .5s ease-in-out;
+            animation: fade .5s ease-in-out;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
 }
 
 @keyframes fade{
     0% {
       opacity: 1;
     }
-    100% {
+    50% {
       opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
