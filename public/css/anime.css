@@ -3,7 +3,44 @@
           animation: color-change-2x 4s linear infinite alternate both;
   }
 
-@-webkit-keyframes color-change-2x {
+  .hover-highlight-to-white:hover{
+    color: rgba(245, 245, 245, 0.856);
+  }
+
+  .service-icon{
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+    background-color: rgba(1, 1, 15, 0.048);
+    border: 1px solid rgb(202, 211, 252);
+    border-radius: 100%;
+  }
+
+  .service-icon-inner{
+    font-size: 1.75em !important; 
+  }
+
+.service-icon:hover, .service-icon:active, .service-icon:focus {
+    -webkit-animation: fade .5s ease-in-out;
+            animation: fade .5s ease-in-out;
+            animation-fill-mode: both;
+            animation-play-state: running;
+}
+
+
+@keyframes fade{
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes color-change-2x {
     0% {
         color: rgba(245, 245, 245, 0.856);
       }
@@ -27,31 +64,43 @@
   }
 
 
-  .service-icon{
-    height: 150px;
-    width: 150px;
-    background-color: rgba(1, 1, 15, 0.26);
-    border: 2px solid rgb(202, 211, 252);
-    border-radius: 100%;
-    animation-fill-mode: backwards;
-    animation-play-state: paused;
-  }
-
-.service-icon:hover, .service-icon:active, .service-icon:focus {
-    -webkit-animation: fade .5s ease-in-out;
-            animation: fade .5s ease-in-out;
-            animation-fill-mode: forwards;
-            animation-play-state: running;
-}
-
-@keyframes fade{
-    0% {
-      opacity: 1;
+  @media only screen and (max-device-width: 1600px) {
+    .service-icon{
+      height: 125px;
+      width: 125px;
+      margin: 15px;
+      background-color: rgba(1, 1, 15, 0.048);
+      border: 1px solid rgb(202, 211, 252);
+      border-radius: 100%;
     }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
+    .service-icon-inner{
+      font-size: 1.5em !important; 
     }
   }
+
+
+  @media only screen and (max-device-width: 700px) {
+    .service-icon{
+      height: 200px;
+      width: 200px;
+      margin: 15px;
+      background-color: rgba(1, 1, 15, 0.048);
+      border: 1px solid rgb(202, 211, 252);
+      border-radius: 100%;
+    }
+  
+    .service-icon-inner{
+      font-size: 2em !important; 
+    }
+    .contact-img{
+      display: none;
+    }
+  }
+
+
+  #services{
+    box-shadow: 10px 10px 10px 10px grey !important;
+  }
+
+
+  
