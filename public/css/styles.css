@@ -493,11 +493,6 @@ button:not(:disabled),
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
-
-.card.enlarge:hover{
-  transform: scale(1.2);
-  z-index: 2;
-}
   
 .card-body{
   background: #8e9eab;  /* fallback for old browsers */
