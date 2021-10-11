@@ -1,54 +1,9 @@
-.color-change-2x:hover {
-  -webkit-animation: color-change-2x 4s linear infinite alternate both;
-          animation: color-change-2x 4s linear infinite alternate both;
-  }
-
-.hover-highlight-to-white:hover{
-  color: rgba(245, 245, 245, 0.856);
-}
-
-
-@keyframes fade{
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes color-change-2x {
-    0% {
-        color: rgba(245, 245, 245, 0.856);
-      }
-    50% {
-      color: #207bf1;
-    }
-    100% {
-      color: #ff2c84;
-    }
-  }
-  @keyframes color-change-2x {
-    0% {
-        color: rgba(245, 245, 245, 0.856);
-      }
-    50% {
-      color: #207bf1;
-    }
-    100% {
-      color: #ff2c84;
-    }
-  }
 
   @media (min-width: 768px) {
     .service-icon{
       height: 15rem !important;
       width: 15rem !important;
       margin: 55px;
-      /* background-color: rgba(1, 1, 15, 0.048); */
       opacity: 1;
       transition: opacity 0.3s ease-out;
       background-color: rgba(1, 1, 15, 0.10);
@@ -63,13 +18,11 @@
     }
   }
 
-
   @media (max-width: 768px) {
     .service-icon{
       height: 12rem !important;
       width: 12rem !important;
       margin: 55px;
-      /* background-color: rgba(1, 1, 15, 0.048); */
       opacity: 1;
       transition: opacity 0.3s ease-out;
       background-color: rgba(1, 1, 15, 0.10);
@@ -90,7 +43,6 @@
       height: 20rem !important;
       width: 20rem !important;
       margin: 55px;
-      /* background-color: rgba(1, 1, 15, 0.048); */
       opacity: 1;
       transition: opacity 0.3s ease-out;
       background-color: rgba(1, 1, 15, 0.10);
@@ -112,37 +64,35 @@
     box-shadow: 10px 10px 10px 10px grey !important;
   }
   #demos{
-    /* background: #011624;
-    color: beige; */
     background: #011624 !important;
   }
   #demos h1{
     color: white !important;
   }
   #contact{
-    background: #943535;
-    color: beige;
+    background: #943535 !important;
+    color: beige !important;
+    border-color: beige !important;
+  }
+  input.form-control{
+    border-color: beige !important;
+    color: beige !important
   }
   input::placeholder{
-    color: white;
+    color: beige !important;
+    border-color: beige !important;
   }
 
 .service-icon:hover, .service-icon:active, .service-icon:focus {
-    /* -webkit-animation: fade .5s ease-in-out;
-            animation: fade .5s ease-in-out;
-            animation-fill-mode: both;
-            animation-play-state: running; */
-            opacity: 0.2;
+  opacity: 0.2;
 }
 
 .card-body-bg{
   background: rgba(255, 255, 255, 0.938) !important;
   color: black !important;
-
 }
 
 .card-title-bg{
-  /* background: whitesmoke !important; */
   background-color: #6B0000;
   color: whitesmoke !important;
   font-weight: 400 !important;
@@ -151,14 +101,13 @@
 
 .audio-card-all{
   background-color: #0f000000;
-  /* border: none; */
   box-shadow: 15px 15px rgba(0, 0, 0, 0.664);
   transition: box-shadow .5s ease-out;
   border-color: white !important;
   border-radius: 20px !important;
   border-width: 0px !important;
   border-style: solid !important;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .audio-card-all:hover{

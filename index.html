@@ -43,13 +43,12 @@ body, html {
 .bgimg-1 {
   background-blend-mode: normal;
   background-size: cover !important;
-  background-image:  /* url("./public/images/diag-btm.svg"), url("./public/images/d11.svg"),  url("./public/images/d12.svg"), */ 
-  /* url("./public/images/diag-btm.svg"), */
-  linear-gradient(
-    rgba(19, 19, 19, 0.45),
-    rgba(19, 19, 19, 0.45)
-  ),
-  url('https://images.unsplash.com/photo-1558590987-faeb0846037e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');
+  background-image:
+    linear-gradient(
+      rgba(19, 19, 19, 0.45),
+      rgba(19, 19, 19, 0.45)
+    ),
+    url('https://images.unsplash.com/photo-1558590987-faeb0846037e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');
   min-height: 100vh !important;
 }
 
@@ -93,25 +92,90 @@ body, html {
   text-shadow: 3px 3px rgba(26, 14, 14, 0.801);
   font-size: 10vw !important;
   }
+
 .carolyn-rood-sub{
-  color: rgb(0, 0, 0);
+  color: rgba(245, 245, 245, 0.856);
   font-weight: 400; 
   text-shadow: 1px 1px rgba(160, 160, 160, 0.103);
   font-style: italic;
-  font-size: 2vw !important;
+  font-size: 3vw !important;
 }
 
 #titlebg{
-  /* background-color: rgb(107, 0, 0); */
-  /* box-shadow: 10px 10px black; */
   width: 100% !important;
-  padding: 25px;
-  border-radius: 25px;
+  overflow-x: visible;
+}
+
+.about-lr-sub-text{
+  font-size: 2rem;
+  padding: 15px;
+}
+.blockquote-text{
+  font-size: 3rem;
+}
+.about-subtitle{
+  font-size: 2rem;
+}
+.about-title{
+  font-size: 6rem;
+}
+
+
+
+@media only screen and (min-device-width: 1200px) {
+  .about-lr-sub-text{
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+  .blockquote-text{
+    font-size: 2.5rem;
+  }
+  .about-subtitle{
+    font-size: 1.75rem;
+  }
+  .about-title{
+    font-size: 5rem;
+  }
+  #contact-header-small{
+    display: none;
+  }
 }
  
+@media only screen and (min-device-width: 900px) {
+  .about-lr-sub-text{
+    font-size: 2rem;
+    padding: 15px;
+  }
+  .blockquote-text{
+    font-size: 3rem;
+  }
+  .about-subtitle{
+    font-size: 2rem;
+  }
+  .about-title{
+    font-size: 5rem;
+  }
+}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
+  #contact-header-large{
+    display: none;
+  }
+  .about-lr-sub-text{
+  font-size: 1.5rem;
+  padding: 15px;
+}
+.blockquote-text{
+  font-size: 2rem;
+}
+.about-subtitle{
+  font-size: 1.5rem;
+}
+.about-title{
+  font-size: 3rem;
+}
+
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
@@ -122,10 +186,10 @@ body, html {
     font-size: 14vw !important;
   }
   .carolyn-rood-sub{
-    color: rgb(0, 0, 0);
+    color: rgba(245, 245, 245, 0.856);
     font-weight: 400; 
-    text-shadow: 1px 1px rgba(206, 206, 206, 0.267);
-    font-size: 4vw !important;
+    text-shadow: 1px 1px rgba(160, 160, 160, 0.103);
+    font-size: 6vw !important;
   }
   .avatar{
     width: 250px;
@@ -160,88 +224,42 @@ body, html {
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap; padding-bottom: 150px !important;">
     <div id="titlebg">
-    <h1  data-aos="zoom-out-up" class="color-change-2x carolyn-rood" style="font-family: Courgette; font-size: 10vw;">Carolyn Rood</h1>
+    <h1 class="carolyn-rood" style="font-family: Courgette;">Carolyn Rood</h1>
     <div class="row">
-    <h4 class="hover-highlight-to-white carolyn-rood-sub">Voiceover Artist</h4>
+    <h2 class="carolyn-rood-sub">Voiceover Artist</h2>
   </div>
   </div>
   </div>
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about" style="overflow-x: hidden !important; font-family: lora;" >
-  <h3 class="w3-center display-1" style="font-family: lora;">ABOUT ME</h3>
-  <p class="w3-center fs-2"><em>I can talk! My voice is natural and real.</em></p>
-  <p class="container col-8">
-    <span class="col-4 fs-1">
-      <blockquote class="blockquote fs-1">
-        <p>My <strong>33 years</strong> of over the phone customer service make me a great communicator.</p>
-      </blockquote>
-    </span>
-    <div class="row row-col-2 mx-auto text-start">
-      <span  data-aos="fade-right" class="col-6 fs-3 border-end border-2">I have had the opportunity to publicly practice announcing for the American Cancer Society at their fundraising events.</span>
-      <span  data-aos="fade-left" class="col-6 fs-3">I use ProTools software and have my own in-home studio, which enables me to do quick turn arounds.</span></p>
-    </div>
-  <div class="w3-row">
-    <div class="w3-col w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Carolyn Rood</b></p>
-      <!-- <img src="./public/images/Carolyn-Pic.jpeg" class="w3-round w3-image avatar" alt="Photo of Me" width="500" height="333"> -->
-      <img data-aos="fade-up" src="./public/images/Carolyn-Pic.jpeg" class="w3-round w3-image avatar" alt="Photo of Me" width="500" height="500">
-      <p class="text-muted">"I can talk!"</p>
-    </div>
-  </div>
-</div>
+<div class="vw-100 container-fluid" id="about" style="overflow-x: hidden !important; font-family: lora;" >
+  <div class="row row-cols-1 row-cols-lg-2">
 
-<div class="display-1 h-100 bg-dark text-light">or would you prefer this?</div>
+    <div class="col-12 col-lg-6 p-0"><img src="./public/images/Carolyn-Pic.jpeg" class="img-fluid" alt="Photo of Me"></div>
 
-
-<!-- Container (About Section) -->
-<div class=" container-fluid" id="about" style="overflow-x: hidden !important; font-family: lora;" >
-  <div class="row">
-    <div class="col-6"><img data-aos="fade-up" src="./public/images/Carolyn-Pic.jpeg" class="w3-round w3-image img-fluid avatar" alt="Photo of Me"></div>
-    <div class="col-6">
-      <h3 class="w3-center display-1" style="font-family: lora;">ABOUT ME</h3>
-      <p class="w3-center fs-2"><em>I can talk! My voice is natural and real.</em></p>
-      <p class="container col-8">
-      <span class="col-4 fs-1">
-        <blockquote class="blockquote fs-1">
-          <p>My <strong>33 years</strong> of over the phone customer service make me a great communicator.</p>
-        </blockquote>
-      </span>
-      <div class="row row-col-2 mx-auto text-start">
-        <span  data-aos="fade-right" class="col-6 fs-3 border-end border-2">I have had the opportunity to publicly practice announcing for the American Cancer Society at their fundraising events.</span>
-        <span  data-aos="fade-left" class="col-6 fs-3">I use ProTools software and have my own in-home studio, which enables me to do quick turn arounds.</span></p>
-      </div>
+    <div class="col-12 col-lg-6 my-auto">
+      <h1 class="w3-center about-title mb-2" style="font-family: lora;">ABOUT ME</h1>
+      <p class="w3-center about-subtitle"><em>"I can talk! My voice is natural and real."</em></p>
+      <p class="container">
+        <span class="col-4">
+          <blockquote class="blockquote blockquote-text">
+            <p>My <strong>33 years</strong> of over the phone customer service make me a great communicator.</p>
+          </blockquote>
+        </span>
+        <div class="row row-cols-1 row-cols-lg-1 mx-auto text-start">
+          <span data-aos="fade-right" class="about-lr-sub-text col-6 col-lg-6 border-end border-2">I have had the opportunity to publicly practice announcing for the <em>American Cancer Society</em> at their fundraising events.</span>
+          <span data-aos="fade-left" class="about-lr-sub-text col-6 col-lg-6 ">I use ProTools software and have my own in-home studio, which enables me to do quick turn arounds.</span>
+        </div>
+      </p>
     </div>
   </div>
 </div>
 
-<div class="display-1 h-100 bg-dark text-light">or would you prefer this?</div>
 
-
-<!-- Container (About Section) -->
-<div class=" container-fluid" id="about" style="overflow-x: hidden !important; font-family: lora;" >
-  <h3 class="w3-center display-1" style="font-family: lora;">ABOUT ME</h3>
-      <p class="w3-center fs-2"><em>I can talk! My voice is natural and real.</em></p>
-  <div class="row">
-    <div class="col-6"><img data-aos="fade-up" src="./public/images/Carolyn-Pic.jpeg" class="w3-round w3-image img-fluid avatar" alt="Photo of Me"></div>
-    <div class="col-6">
-      <p class="container col-8">
-      <span class="col-4 fs-1">
-        <blockquote class="blockquote fs-1">
-          <p>My <strong>33 years</strong> of over the phone customer service make me a great communicator.</p>
-        </blockquote>
-      </span>
-      <div class="row row-col-2 mx-auto text-start">
-        <span  data-aos="fade-right" class="col-6 fs-3 border-end border-2">I have had the opportunity to publicly practice announcing for the American Cancer Society at their fundraising events.</span>
-        <span  data-aos="fade-left" class="col-6 fs-3">I use ProTools software and have my own in-home studio, which enables me to do quick turn arounds.</span></p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Row (Services Section) -->
-<div class="w3-row w3-center w3-dark-grey w3-padding-16 container-fluid pb-5 shadow" id="services"  style="font-family: lora;">
+<div class="w3-row w3-center w3-dark-grey w3-padding-16 container-fluid pb-5 shadow" id="services" style="font-family: lora;">
   <h1 class="w3-center display-1 mx-auto service-text" style="font-family: Lora;"><u>Services</u></h1>
   <div class="container-fluid">
     <div class="row">
@@ -255,11 +273,7 @@ body, html {
 </div>
 
 <!-- Second Parallax Image with Demos -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <!-- <div class="w3-display-middle w3-black-extened p-1">
-    <span class="w3-xxlarge w3-text-white w3-wide">Demos</span>
-  </div> -->
-</div>
+<div class="bgimg-2 w3-display-container w3-opacity-min"></div>
 
 <!-- Container (Demos Section) -->
 <div class="w3-row w3-padding-64 container-fluid pt-5" id="demos" style="font-family: lora;">
@@ -301,14 +315,10 @@ body, html {
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle p-1">
-     <!-- <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span> -->
-  </div>
-</div>
+<div class="bgimg-3 w3-display-container w3-opacity-min"></div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-row w3-padding-64 position-relative container-fluid" id="contact" style="font-family: lora;">
+<!-- <div class="w3-row w3-padding-64 position-relative container-fluid" id="contact" style="font-family: lora;">
   <div class="container">
   <h3 class="w3-center display-1" style="font-family: lora;">Contact</h3>
   <p class="w3-center border-bottom border-1"><em>I'd love to work with you!</em></p>
@@ -340,6 +350,47 @@ body, html {
   </div>
   <img src="./public/images/introduction-3616867.svg" class="w-50 h-75 position-absolute bottom-0 p-5 end-0 contact-img" style="z-index: -1;"/>
   </div>
+</div> -->
+
+<div class="vw-100 container-fluid" style="overflow-x: hidden !important; font-family: lora;" id="contact">
+  <div class="row row-cols-1 row-cols-lg-2">
+    <div class="container">
+      <div id="contact-header-small">
+        <h3 class="w3-center display-1" style="font-family: lora;">Contact</h3>
+        <p class="w3-center border-bottom border-1"><em>I'd love to work with you!</em></p>
+      </div>
+  
+      <div class="container ">
+        <div class="row row-cols-lg-2">
+          <div class="w3-large w3-margin-bottom col-lg-6 text-nowrap">
+            <div id="contact-header-large">
+              <h3 class="w3-center display-1" style="font-family: lora;">Contact</h3>
+              <p class="w3-center"><em>I'd love to work with you!</em></p>
+            </div>
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Florida, USA<br>
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (253)-878-2107<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right text-nowrap"></i> Email: Carolyn@carolynrood-vo.com<br>
+            <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+          </div>
+  
+          <div class="col-lg-6  my-auto">
+            <form action="/action_page.php" target="_blank">
+              <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                  <input class="form-control form-control-lg border rounded-3" type="text" placeholder="Name" required name="Name">
+                  <input class="form-control form-control-lg border rounded-3" type="text" placeholder="Email" required name="Email">
+                  <input class="form-control form-control-lg border rounded-3" type="text" placeholder="Message" required name="Message">
+              </div>
+              <button class="w3-button w3-black w3-right w3-section" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              </button>
+            </form>
+          </div>
+  
+        </div>
+      </div>
+      <img src="./public/images/introduction-3616867.svg" class="w-50 h-75 position-absolute bottom-0 p-5 end-0 contact-img" style="z-index: -1;"/>
+    </div>
+  </div>
 </div>
 
 <!-- Footer -->
@@ -356,10 +407,12 @@ body, html {
   <p>Powered by <a href="https://www.em2g.com/" title="W3.CSS" target="_blank" class="w3-hover-text-green">© 2001 - 2020 Media Graphics Group | em2g.  All Rights Reserved.</a></p>
 </footer>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./public/js/jquery.js"></script>
 <script src="./public/js/audioplayer.js"></script>
 <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
 <script>
+  AOS.init();
   // Change style of navbar on scroll
   window.onscroll = function() {myFunction()};
   function myFunction() {
@@ -379,10 +432,6 @@ body, html {
           x.className = x.className.replace(" w3-show", "");
       }
   }
-</script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
 </script>
 </body>
 </html>
