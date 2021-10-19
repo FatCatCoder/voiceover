@@ -3,10 +3,7 @@
 <title>Carolyn Rood</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./dev/w3styles.css">
-<link rel="stylesheet" href="./public/css/audioplayer.css">
-<link rel="stylesheet" href="./dev/bootstrap.css">
-<link rel="stylesheet" href="./public/css/anime.css">
+<link rel="stylesheet" href="./public/css/styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
@@ -48,13 +45,13 @@ body, html {
       rgba(19, 19, 19, 0.45),
       rgba(19, 19, 19, 0.45)
     ),
-    url('https://images.unsplash.com/photo-1558590987-faeb0846037e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');
+    url('./public/images/landing-img.jpg');
   min-height: 100vh !important;
 }
 
 /* Second image (Demo) */
 .bgimg-2 {
-  background-image: url("https://images.unsplash.com/photo-1611532736579-6b16e2b50449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80");
+  background-image: url("./public/images/girl-in-studio.jpg");
   min-height: 400px;
 }
 
@@ -165,16 +162,16 @@ body, html {
   .about-lr-sub-text{
   font-size: 1.5rem;
   padding: 15px;
-}
-.blockquote-text{
+  }
+  .blockquote-text{
   font-size: 2rem;
-}
-.about-subtitle{
+  }
+  .about-subtitle{
   font-size: 1.5rem;
-}
-.about-title{
+  }
+  .about-title{
   font-size: 3rem;
-}
+  }
 
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
@@ -235,9 +232,7 @@ body, html {
 <!-- Container (About Section) -->
 <div class="vw-100 container-fluid" id="about" style="overflow-x: hidden !important; font-family: lora;" >
   <div class="row row-cols-1 row-cols-lg-2">
-
     <div class="col-12 col-lg-6 p-0"><img src="./public/images/Carolyn-Pic.jpeg" class="img-fluid" alt="Photo of Me"></div>
-
     <div class="col-12 col-lg-6 my-auto">
       <h1 class="w3-center about-title mb-2" style="font-family: lora;">ABOUT ME</h1>
       <p class="w3-center about-subtitle"><em>"I can talk! My voice is natural and real."</em></p>
@@ -294,7 +289,6 @@ body, html {
         </div>
       </div>
     </div>
-
     <div class="col d-flex align-items-stretch">
       <div class="card h-100 w-100 mx-auto shadow audio-card-all">
         <h4 class="card-title fw-400 pt-4 pb-4 m-0 display-6 border-bottom card-title-bg">
@@ -308,49 +302,12 @@ body, html {
         </div>
       </div>
     </div>
-   
     </div>
-    
   </div>
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min"></div>
-
-<!-- Container (Contact Section) -->
-<!-- <div class="w3-row w3-padding-64 position-relative container-fluid" id="contact" style="font-family: lora;">
-  <div class="container">
-  <h3 class="w3-center display-1" style="font-family: lora;">Contact</h3>
-  <p class="w3-center border-bottom border-1"><em>I'd love to work with you!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom text-nowrap">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Florida, USA<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (253)-878-2107<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right text-nowrap"></i> Email: Carolyn@carolynrood-vo.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-  <img src="./public/images/introduction-3616867.svg" class="w-50 h-75 position-absolute bottom-0 p-5 end-0 contact-img" style="z-index: -1;"/>
-  </div>
-</div> -->
 
 <div class="vw-100 container-fluid" style="overflow-x: hidden !important; font-family: lora;" id="contact">
   <div class="row row-cols-1 row-cols-lg-2">
